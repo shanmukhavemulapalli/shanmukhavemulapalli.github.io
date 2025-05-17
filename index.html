@@ -3,177 +3,134 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shanmukha Sai Vemulapalli - Resume</title>
+  <title>Shanmukha Sai Vemulapalli</title>
   <style>
-    :root {
-      --primary: #2c3e50;
-      --secondary: #34495e;
-      --accent: #3498db;
-      --background: #f4f6f8;
-      --text: #2d2d2d;
-      --card-bg: #ffffff;
-      --border-radius: 10px;
-      --shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
     body {
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--background);
-      color: var(--text);
+      background: #f8f9fa;
+      color: #2d2d2d;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1em;
+    }
+
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     .container {
       max-width: 1000px;
       margin: 40px auto;
-      padding: 20px;
+      padding: 0 20px;
     }
 
-    header {
-      text-align: center;
-      margin-bottom: 40px;
+    section {
+      margin-bottom: 50px;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.4rem;
-      color: var(--primary);
-    }
-
-    header .contact a {
-      text-decoration: none;
-      color: var(--accent);
-    }
-
-    .section {
-      background-color: var(--card-bg);
-      padding: 20px;
-      border-radius: var(--border-radius);
-      box-shadow: var(--shadow);
-      margin-bottom: 25px;
-    }
-
-    .section h2 {
-      color: var(--secondary);
-      margin-top: 0;
-      border-bottom: 2px solid var(--accent);
-      padding-bottom: 5px;
+    h2 {
+      color: #005f73;
+      margin-bottom: 10px;
     }
 
     ul {
       padding-left: 20px;
     }
 
-    .section p, ul li {
-      font-size: 1rem;
-      line-height: 1.6;
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      color: #666;
+      font-size: 0.9em;
     }
 
-    .highlight {
-      color: var(--accent);
-      font-weight: bold;
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        padding: 10px;
-      }
-
-      header h1 {
-        font-size: 1.8rem;
-      }
-
-      .section {
-        padding: 15px;
-      }
+    a {
+      color: #0077b6;
     }
   </style>
 </head>
 <body>
+
+  <header>
+    <h1>Shanmukha Sai Vemulapalli</h1>
+    <p>Masters in Data Science | AI Researcher | Deep Learning Enthusiast</p>
+    <p><a href="mailto:ssv1766@gmail.com" style="color:#66ccff;">ssv1766@gmail.com</a> | 512-798-2624 | <a href="https://linkedin.com/in/shanmukha-v" target="_blank" style="color:#66ccff;">LinkedIn</a></p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
   <div class="container">
-    <header>
-      <h1>Shanmukha Sai Vemulapalli</h1>
-      <div class="contact">
-        Houston, TX 77054 | 512-798-2624 | 
-        <a href="mailto:ssv1766@gmail.com">ssv1766@gmail.com</a><br/>
-        <a href="https://linkedin.com/in/shanmukha-v/" target="_blank">linkedin.com/in/shanmukha-v</a>
-      </div>
-    </header>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m currently pursuing a Master's in Engineering Data Science at the University of Houston. I specialize in artificial intelligence, deep learning, computer vision, and cloud computing, with research experience in sound event detection, breath-based cancer diagnosis, and anomaly detection in Ethereum networks.</p>
+    </section>
 
-    <div class="section">
-      <h2>Profile Summary</h2>
-      <p>A tech-driven individual and Data Science graduate student with expertise in <span class="highlight">AI, Deep Learning, Cloud Computing, and Advanced Analytics</span>. Experienced in data handling, sound event detection, and disease prediction research. Seeking Data Analyst and R&D roles.</p>
-    </div>
-
-    <div class="section">
-      <h2>Qualifications Summary</h2>
+    <section id="research">
+      <h2>Research</h2>
       <ul>
-        <li>Artificial Intelligence, Explainable AI</li>
-        <li>Machine & Deep Learning</li>
-        <li>Big Data, Data Mining & Warehousing</li>
-        <li>Computer Vision & Image Processing</li>
-        <li>Database Management (SQL, MongoDB)</li>
-        <li>Cloud Computing (GCP, AWS)</li>
+        <li><strong>Sound Event Detection (IEEE, Mar 2024)</strong>: Achieved 91% accuracy using CNN-LSTM for complex acoustic scenes.</li>
+        <li><strong>Ethereum Anomaly Detection (Under Review)</strong>: Developed SRX (SVM + RF + XGBoost), achieving 99% accuracy on blockchain anomalies.</li>
+        <li><strong>Breath-Based Cancer Detection</strong>: Used deep learning on gas chromatography + metadata for improved diagnosis accuracy.</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="section">
-      <h2>Education</h2>
-      <p><strong>University of Houston</strong> – Master’s in Engineering Data Science <br/>
-      <span class="highlight">CGPA: 3.83</span> | Expected April 2026</p>
-
-      <p><strong>Amrita Vishwa Vidyapeetham, India</strong> – Bachelor’s in Computer Science and Engineering<br/>
-      <span class="highlight">CGPA: 8.59/10 (3.55/4)</span> | July 2020 – June 2024</p>
-    </div>
-
-    <div class="section">
-      <h2>Work Experience</h2>
-      <p><strong>ISMO Bio Photonics Pvt Ltd, IIT Madras Research Park</strong><br/>
-      <em>Machine Learning Intern | Feb 2024 – May 2024</em></p>
-      <ul>
-        <li>Conducted deep learning research for cell classification.</li>
-        <li>Used multimodal fusion of gas chromatography and metadata for cancer detection from breath signals.</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Research Publications</h2>
-      <p><strong>Sound Event Detection in Constrained Environments</strong> – IEEE Conference, March 2024</p>
-      <ul><li>Achieved 91% accuracy using lightweight CNN+LSTM architecture.</li></ul>
-
-      <p><strong>Anomaly Detection in Ethereum Networks</strong> – Journal (Under Review)</p>
-      <ul><li>Designed SRX Ensemble (SVM, RF, XGBoost); reached 99% accuracy.</li></ul>
-    </div>
-
-    <div class="section">
+    <section id="projects">
       <h2>Projects</h2>
-      <p><strong>Anomalous Sound Classification in Forests</strong> – (Under Peer Review)</p>
-      <ul><li>Two-stage DL model using MFCC features, 98% accuracy with 5-fold validation.</li></ul>
-
-      <p><strong>Web-Integrated Cuisine Suggestion System (WCISS)</strong></p>
-      <ul><li>Used NLP and MongoDB to suggest dining based on cuisine and history (43K+ restaurants).</li></ul>
-
-      <p><strong>3D Object Detection using LIDAR</strong></p>
-      <ul><li>Trained model to detect 3D coordinates for autonomous driving.</li></ul>
-    </div>
-
-    <div class="section">
-      <h2>Certifications</h2>
       <ul>
-        <li>Advanced Data Structures in Python – Coursera (Jul 2022)</li>
-        <li>BigQuery Data Warehousing – Google Cloud (Jul 2022)</li>
-        <li>Google Cloud Certification – GCCF (Apr 2023)</li>
-        <li>Machine Learning Specialization – Stanford/Coursera (May 2024)</li>
+        <li><strong>Forest Sound Classification</strong> – Achieved 98% accuracy with MFCC-based DL ensemble.</li>
+        <li><strong>WCISS</strong> – Web-integrated cuisine suggestion system trained on 43,000+ restaurant records.</li>
+        <li><strong>3D Lidar Object Detection</strong> – Implemented custom 3D object recognition pipeline for autonomous vehicles.</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="section">
-      <h2>Skills</h2>
-      <p><strong>Languages & Tools:</strong> Python, C++, TensorFlow, PyTorch, OpenCV, SQL, MongoDB, PowerBI, AutoCAD, MATLAB, Hadoop</p>
-      <p><strong>Cloud:</strong> Google Cloud Platform, Amazon Web Services</p>
-      <p><strong>Languages Spoken:</strong> English (Proficient), Telugu (Proficient), Hindi (Fluent), Tamil (Fluent)</p>
-    </div>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>📍 Houston, TX 77054</p>
+      <p>📧 <a href="mailto:ssv1766@gmail.com">ssv1766@gmail.com</a></p>
+      <p>📞 512-798-2624</p>
+      <p>🔗 <a href="https://linkedin.com/in/shanmukha-v" target="_blank">LinkedIn Profile</a></p>
+    </section>
   </div>
+
+  <footer>
+    © 2025 Shanmukha Sai Vemulapalli — Powered by GitHub Pages
+  </footer>
+
 </body>
 </html>
