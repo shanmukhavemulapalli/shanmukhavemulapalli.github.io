@@ -102,6 +102,16 @@
       margin-bottom: 20px;
     }
 
+    h3 {
+      margin-bottom: 5px;
+      color: #ffffff;
+    }
+
+    p {
+      margin: 5px 0 15px;
+      color: #bbbbbb;
+    }
+
     ul {
       padding-left: 20px;
     }
@@ -109,6 +119,16 @@
     li {
       margin-bottom: 10px;
       color: #ccc;
+    }
+
+    .experience-item,
+    .education-item,
+    .project-item,
+    .certification-item,
+    .publication-item,
+    .skill-item,
+    .community-item {
+      margin-bottom: 30px;
     }
 
     @media (max-width: 900px) {
@@ -159,12 +179,17 @@
 
 <section id="education">
   <h2>Education</h2>
-  <ul>
-    <li><strong>University of Houston</strong>, MS in Engineering Data Science, CGPA: 3.83 — Expected Apr 2026</li>
-    <li><strong>Amrita Vishwa Vidyapeetham</strong>, B.Tech in CSE, CGPA: 8.59/10 — July 2020 – June 2024</li>
-  </ul>
+  <div class="education-item">
+    <h3>University of Houston</h3>
+    <p>MS in Engineering Data Science — CGPA: 3.83</p>
+    <p><em>Expected Apr 2026</em></p>
+  </div>
+  <div class="education-item">
+    <h3>Amrita Vishwa Vidyapeetham</h3>
+    <p>B.Tech in Computer Science and Engineering — CGPA: 8.59/10</p>
+    <p><em>July 2020 – June 2024</em></p>
+  </div>
 </section>
-
 
 <section id="experience">
   <h2>Work Experience</h2>
@@ -172,31 +197,41 @@
     <h3>ML Intern — ISMO Bio Photonics, IIT Madras</h3>
     <p><em>Feb 2024 – May 2024</em></p>
     <ul>
-      <li>Conducted in-depth research on journal papers and articles focused on deep learning models for cell classification.</li>
-      <li>Analyzed open-source datasets and prepared documentation for dataset creation.</li>
-      <li>Trained deep learning models on pre-processed biomedical data.</li>
-      <li>Applied multimodal data fusion techniques on gas chromatography signals and clinical metadata.</li>
-      <li>Improved cancer detection accuracy by integrating signal data with patient metadata from human breath samples.</li>
+      <li>Conducted in-depth research on deep learning models for cell classification.</li>
+      <li>Analyzed open-source datasets and prepared dataset documentation.</li>
+      <li>Trained DL models on pre-processed biomedical data.</li>
+      <li>Applied multimodal data fusion techniques on gas chromatography and clinical metadata.</li>
+      <li>Enhanced cancer detection using human breath exhalation analysis.</li>
     </ul>
   </div>
 </section>
 
-
 <section id="publications">
   <h2>Research Publications</h2>
-  <ul>
-    <li><strong>Sound Event Detection</strong> – IEEE Conf, Mar 2024. Achieved 91% accuracy with CNN+LSTM.</li>
-    <li><strong>Ethereum Anomaly Detection</strong> – Journal (Under Review). Ensemble SVM, RF, XGBoost achieving 99% accuracy.</li>
-  </ul>
+  <div class="publication-item">
+    <h3>Sound Event Detection</h3>
+    <p>IEEE Conference, Mar 2024 — Achieved 91% accuracy using CNN+LSTM.</p>
+  </div>
+  <div class="publication-item">
+    <h3>Ethereum Anomaly Detection</h3>
+    <p>Journal (Under Review) — Used SVM, RF, XGBoost ensemble; achieved 99% accuracy.</p>
+  </div>
 </section>
 
 <section id="projects">
   <h2>Projects</h2>
-  <ul>
-    <li><strong>Forest Sound Classification</strong> – Two-stage DL model using MFCCs (98% accuracy).</li>
-    <li><strong>WCISS</strong> – NLP-powered restaurant suggestion system (43K+ entries).</li>
-    <li><strong>3D LIDAR Object Detection</strong> – Model to detect 3D coordinates for autonomous driving.</li>
-  </ul>
+  <div class="project-item">
+    <h3>Forest Sound Classification</h3>
+    <p>Two-stage DL model with MFCC features (98% accuracy).</p>
+  </div>
+  <div class="project-item">
+    <h3>WCISS</h3>
+    <p>NLP-based restaurant suggestion system built on 43K+ dataset entries.</p>
+  </div>
+  <div class="project-item">
+    <h3>3D LIDAR Object Detection</h3>
+    <p>Autonomous vehicle perception model to detect and localize objects in 3D.</p>
+  </div>
 </section>
 
 <section id="certifications">
@@ -221,10 +256,14 @@
 
 <section id="community">
   <h2>Community Involvement</h2>
-  <ul>
-    <li>Volunteer — Amrita Charity Trust (Food & clothing drives)</li>
-    <li>Organizer — Tantrotsav 2023, Tech Fest at Amrita School of Computing</li>
-  </ul>
+  <div class="community-item">
+    <h3>Volunteer</h3>
+    <p>Amrita Charity Trust — Organized food & clothing donation drives.</p>
+  </div>
+  <div class="community-item">
+    <h3>Organizer</h3>
+    <p>Tantrotsav 2023 — Tech Fest at Amrita School of Computing.</p>
+  </div>
 </section>
 
 </body>
